@@ -1,0 +1,679 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/wallpaperflare.com_wallpaper.jpg") ; /* The image used */
+    height: 100vh; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+@font-face {
+    font-family: Azonix;
+    src: url(fonts/Azonix.otf);
+}
+
+@font-face {
+    font-family: "Kiona Regular";
+    src: url(fonts/Kiona-Regular.ttf);
+}
+
+@font-face {
+    font-family: "MalibusunsetSansFree JR31a";
+    src: url(fonts/MalibusunsetSansFree-JR31a.otf);
+}
+
+.container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.marca {
+    align-self: center;
+    font-family: Azonix;
+}
+
+.logo img {
+    align-self: center;
+    width: 120px;
+    height: auto;
+}
+
+.formulario {
+    justify-content: center;
+    background: rgb(82,175,187);
+    background: linear-gradient(280deg, rgba(82,175,187,1) 62%, rgba(214,183,160,1) 62%, rgba(36,112,139,1) 62%, rgba(47,144,173,1) 62%, rgba(8,40,67,1) 62%);
+    display: flex;
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    box-shadow: 4px 4px 2px #0b0b0b;
+    border-radius: 10%;
+}
+
+fieldset {
+    color: #d6b7a0;
+    border: solid 0px #d6b7a0;
+
+}
+
+form {
+    font-family: "MalibusunsetSansFree JR31a";
+    width: 100%;
+    height: 100px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 20px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    margin-top: 0;
+}
+
+input {
+    background-color:  #082843;
+    color:  #d6b7a0;
+}
+
+.Login {
+    width: 350px;
+    padding: 5px;
+    font-size: 13px;
+}
+
+.password {
+    width: 350px;
+    padding: 5px;
+    font-size: 13px;
+}
+
+.button {
+    width: auto;
+    background-color: #082843;
+    color: #d6b7a0;
+}
+
+.link  {
+    color: #d6b7a0;
+}
+
+
+.link:hover {
+    color: #082843;
+}
+
+.link:visited {
+    color: none;
+}
+
+.conta {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.conta a {
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.conta a:hover {
+    transform: scale(1.1);
+}
+
+.or {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 13px;
+    color: #d6b7a0;
+    text-shadow: 1px 1px 1px #24708b;
+    display: flex;
+    justify-content: center;
+}
+
+hr {
+    width: 360px;
+    border-color: #52afbb;     /*mudar a cor do hr */
+    box-shadow: 0px 5px 4px #082843;
+}
+
+.Google {
+    height: 50px;
+    background-color: #24708b;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #d6b7a0;
+    border-radius: 20px;
+    margin-left: 12px;
+    margin-right: 16px;
+}
+
+.Google img {
+    margin-left: 10px;
+    object-fit: contain;
+    width: 30px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.Facebook {
+    font-size: 14px;
+    display: flex;
+    background: rgb(82,175,187);
+    background: linear-gradient(280deg, rgba(82,175,187,1) 0%, rgba(36,112,139,1) 0%, rgba(36,112,139,1) 100%);
+    height: 50px;
+    color: #d6b7a0;
+    align-items: center;
+    border-radius: 20px;
+    margin-left: 12px;
+    margin-right: 16px;
+}
+
+.Facebook img {
+    margin-left: 10px;
+    margin-right: 15px;
+    object-fit: contain;
+    width: 30px;
+    height: auto;
+}
+
+
+.footer {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    align-items: center
+}
+
+.footer_copy {
+    background-color:  #082843;
+    height: 17px;
+    width: 165px;
+    border-radius: 0px 50px 0px 0px ;   
+    padding-left: 3px;
+    padding-right: 1px;
+    box-shadow: 2px 2px 2px 2px  #0b0b0b;
+}
+
+.footer_text {
+    font-family: "Kiona Regular";
+    font-size: 12px;
+    color: #d6b7a0;
+    text-shadow: 1px 1px 1px #52afbb;
+}
+
+.footer_copy a {
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer_copy a:visited {
+    color: #d6b7a0;
+}
+
+.footer_copy a:hover {
+    color: #52afbb; /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
+    background-clip: text; /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+    transform: scale(1.1);
+
+}  
+
+strong {
+    font-size: 12px;
+}
+
+.meu  {
+    font-size: 13px;
+}
+
+@media screen and (max-width:768px) {
+    .formulario {
+        justify-content: center;
+        background: rgb(82,175,187);
+        background: linear-gradient(280deg, rgba(82,175,187,1) 62%, rgba(214,183,160,1) 62%, rgba(36,112,139,1) 62%, rgba(47,144,173,1) 62%, rgba(8,40,67,1) 62%);
+        display: flex;
+        width: 350px;
+        height: 350px;
+        padding: 10px;
+        box-shadow: 4px 4px 2px #0b0b0b;
+        border-radius: 10%;
+    }
+
+
+    
+    form {
+        font-family: "MalibusunsetSansFree JR31a";
+        width: 100%;
+        height: 100px;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 20px;
+        margin-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 10px;
+        margin-top: 0;
+        padding-top: 5px;
+    }
+
+    fieldset  {
+        font-size: 15px;
+    
+    }
+    
+    input {
+        background-color:  #082843;
+        color:  #d6b7a0;
+    }
+    
+    .Login {
+        width: 300px;
+        padding: 5px;
+        font-size: 13px;
+    }
+    
+    .password {
+        width: 300px;
+        padding: 5px;
+        font-size: 13px;
+    }
+    
+    .button {
+        width: auto;
+        background-color: #082843;
+        color: #d6b7a0;
+    }
+    
+    
+    .conta {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .conta a {
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .conta a:hover {
+        transform: scale(1.1);
+    }
+    
+    .or {
+        margin-top: 7px;
+        margin-bottom: 30px;
+        font-size: 12px;
+        color: #d6b7a0;
+        text-shadow: 1px 1px 1px #24708b;
+        display: flex;
+        justify-content: center;
+    }
+    
+    hr {
+        width: 300px;
+        border-color: #52afbb;     /*mudar a cor do hr */
+        box-shadow: 0px 5px 4px #082843;
+    }
+    
+    .Google {
+        height: 40px;
+        background-color: #24708b;
+        display: flex;
+        align-items: center;
+        font-size: 13px;
+        margin-bottom: 15px;
+        color: #d6b7a0;
+        border-radius: 20px;
+        margin-left: 5px;
+        margin-right: 16px;
+    }
+    
+    .Google img {
+        margin-left: 10px;
+        object-fit: contain;
+        width: 30px;
+        height: auto;
+        margin-right: 10px;
+    }
+    
+    .Facebook {
+        font-size: 13px;
+        display: flex;
+        background: rgb(82,175,187);
+        background: linear-gradient(280deg, rgba(82,175,187,1) 0%, rgba(36,112,139,1) 0%, rgba(36,112,139,1) 100%);
+        height: 40px;
+        color: #d6b7a0;
+        align-items: center;
+        border-radius: 20px;
+        margin-left: 5px;
+        margin-right: 16px;
+    }
+    
+    .Facebook img {
+        margin-left: 10px;
+        margin-right: 10px;
+        object-fit: contain;
+        width: 30px;
+        height: auto;
+    }
+
+    strong {
+        font-size: 12px;
+    }
+
+    .meu  {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:425px){
+    .formulario {
+        justify-content: center;
+        background: rgb(82,175,187);
+        background: linear-gradient(280deg, rgba(82,175,187,1) 62%, rgba(214,183,160,1) 62%, rgba(36,112,139,1) 62%, rgba(47,144,173,1) 62%, rgba(8,40,67,1) 62%);
+        display: flex;
+        width: 300px;
+        height: 300px;
+        padding: 10px;
+        box-shadow: 4px 4px 2px #0b0b0b;
+        border-radius: 10%;
+    }
+
+
+    
+    form {
+        font-family: "MalibusunsetSansFree JR31a";
+        width: 100%;
+        height: 100px;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 20px;
+        margin-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 10px;
+        margin-top: 0;
+        padding-top: 5px;
+    }
+
+    fieldset  {
+        font-size: 13px;
+    
+    }
+    
+    input {
+        background-color:  #082843;
+        color:  #d6b7a0;
+    }
+    
+    .Login {
+        width: 270px;
+        padding: 5px;
+        font-size: 13px;
+    }
+    
+    .password {
+        width: 270px;
+        padding: 5px;
+        font-size: 13px;
+    }
+    
+    .button {
+        width: auto;
+        background-color: #082843;
+        color: #d6b7a0;
+    }
+    
+    
+    .conta {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .conta a {
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .conta a:hover {
+        transform: scale(1.1);
+    }
+    
+    .or {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-size: 11px;
+        color: #d6b7a0;
+        text-shadow: 1px 1px 1px #24708b;
+        display: flex;
+        justify-content: center;
+    }
+    
+    hr {
+        width: 270px;
+        border-color: #52afbb;     /*mudar a cor do hr */
+        box-shadow: 0px 5px 4px #082843;
+    }
+    
+    .Google {
+        height: 40px;
+        background-color: #24708b;
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        margin-bottom: 15px;
+        color: #d6b7a0;
+        border-radius: 20px;
+        margin-left: 5px;
+        margin-right: 16px;
+    }
+    
+    .Google img {
+        margin-left: 10px;
+        object-fit: contain;
+        width: 30px;
+        height: auto;
+        margin-right: 10px;
+    }
+    
+    .Facebook {
+        font-size: 12px;
+        display: flex;
+        background: rgb(82,175,187);
+        background: linear-gradient(280deg, rgba(82,175,187,1) 0%, rgba(36,112,139,1) 0%, rgba(36,112,139,1) 100%);
+        height: 40px;
+        color: #d6b7a0;
+        align-items: center;
+        border-radius: 20px;
+        margin-left: 5px;
+        margin-right: 16px;
+    }
+    
+    .Facebook img {
+        margin-left: 10px;
+        margin-right: 10px;
+        object-fit: contain;
+        width: 30px;
+        height: auto;
+    }
+
+    strong {
+        font-size: 11px;
+    }
+
+    .meu  {
+        font-size: 12px;
+    }
+
+
+
+}
+
+@media screen and (max-width:340px){
+    .formulario {
+        justify-content: center;
+        background: rgb(82,175,187);
+        background: linear-gradient(280deg, rgba(82,175,187,1) 62%, rgba(214,183,160,1) 62%, rgba(36,112,139,1) 62%, rgba(47,144,173,1) 62%, rgba(8,40,67,1) 62%);
+        display: flex;
+        width: 270px;
+        height: 270px;
+        padding: 10px;
+        box-shadow: 4px 4px 2px #0b0b0b;
+        border-radius: 10%;
+    }
+
+
+    
+    form {
+        font-family: "MalibusunsetSansFree JR31a";
+        width: 100%;
+        height: 100px;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 20px;
+        margin-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 10px;
+        margin-top: 0;
+        padding-top: 5px;
+    }
+
+    fieldset  {
+        font-size: 11px;
+    
+    }
+    
+    input {
+        background-color:  #082843;
+        color:  #d6b7a0;
+    }
+    
+    .Login {
+        width: 240px;
+        padding: 5px;
+        font-size: 13px;
+    }
+    
+    .password {
+        width: 240px;
+        padding: 5px;
+        font-size: 13px;
+    }
+    
+    .button {
+        width: auto;
+        background-color: #082843;
+        color: #d6b7a0;
+    }
+    
+    
+    .conta {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .conta a {
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .conta a:hover {
+        transform: scale(1.1);
+    }
+    
+    .or {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-size: 10px;
+        color: #d6b7a0;
+        text-shadow: 1px 1px 1px #24708b;
+        display: flex;
+        justify-content: center;
+    }
+    
+    hr {
+        width: 240px;
+        border-color: #52afbb;     /*mudar a cor do hr */
+        box-shadow: 0px 5px 4px #082843;
+    }
+    
+    .Google {
+        height: 30px;
+        background-color: #24708b;
+        display: flex;
+        align-items: center;
+        font-size: 11px;
+        margin-bottom: 15px;
+        color: #d6b7a0;
+        border-radius: 20px;
+        margin-left: 5px;
+        margin-right: 16px;
+    }
+    
+    .Google img {
+        margin-left: 10px;
+        object-fit: contain;
+        width: 20px;
+        height: auto;
+        margin-right: 10px;
+    }
+    
+    .Facebook {
+        font-size: 11px;
+        display: flex;
+        background: rgb(82,175,187);
+        background: linear-gradient(280deg, rgba(82,175,187,1) 0%, rgba(36,112,139,1) 0%, rgba(36,112,139,1) 100%);
+        height: 30px;
+        color: #d6b7a0;
+        align-items: center;
+        border-radius: 20px;
+        margin-left: 5px;
+        margin-right: 16px;
+    }
+    
+    .Facebook img {
+        margin-left: 10px;
+        margin-right: 10px;
+        object-fit: contain;
+        width: 20px;
+        height: auto;
+    }
+
+    .footer_text a {
+        font-size: 11px;
+    }
+
+    strong {
+        font-size: 10px;
+    }
+
+    .meu  {
+        font-size: 11px;
+    }
+
+
+}
+
+
+
